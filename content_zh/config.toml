@@ -1,0 +1,34 @@
+[site]
+title = "Shihao Yang"
+description = "Shihao Yang 的学术主页。"
+last_updated = "2026年7月9日"
+
+[author]
+name = "Shihao Yang"
+title = "研究生 / 研究者"
+institution = "东南大学"
+
+[social]
+location = "东南大学，中国"
+location_details = [
+  "东南大学",
+  "中国"
+]
+
+[[navigation]]
+title = "关于"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "论文"
+type = "page"
+target = "publications"
+href = "/publications"
+
+[[navigation]]
+title = "项目"
+type = "page"
+target = "projects"
+href = "/projects"

@@ -1,0 +1,11 @@
+[[news]]
+date = "2026"
+content = "HyCoRA 将发表于 AAAI 2026。"
+
+[[news]]
+date = "2025-11"
+content = "发布了 HyCoRA 的 arXiv 预印本与代码仓库。"
+
+[[news]]
+date = "2025"
+content = "上线了 SnapSQL-Bench 及其 Hugging Face 数据集。"

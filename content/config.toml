@@ -1,0 +1,56 @@
+[site]
+title = "Shihao Yang"
+description = "Academic homepage of Shihao Yang."
+favicon = "/favicon.svg"
+last_updated = "July 9, 2026"
+
+[author]
+name = "Shihao Yang"
+title = "Graduate Student / Researcher"
+institution = "Southeast University"
+avatar = "https://avatars.githubusercontent.com/u/241947270?v=4"
+
+[social]
+location = "Southeast University, China"
+location_url = "https://www.seu.edu.cn/"
+location_details = [
+  "Southeast University",
+  "China"
+]
+google_scholar = "https://scholar.google.com.hk/citations?user=mcx8bJ4AAAAJ&hl=zh-CN&authuser=3"
+github = "https://github.com/yshihao-ai"
+
+[features]
+enable_likes = false
+enable_one_page_mode = false
+
+[i18n]
+enabled = true
+locales = ["zh", "en"]
+default_locale = "en"
+mode = "auto"
+fixed_locale = "en"
+persist = true
+switcher = true
+
+[i18n.labels]
+zh = "中文"
+en = "English"
+
+[[navigation]]
+title = "About"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "Publications"
+type = "page"
+target = "publications"
+href = "/publications"
+
+[[navigation]]
+title = "Projects"
+type = "page"
+target = "projects"
+href = "/projects"

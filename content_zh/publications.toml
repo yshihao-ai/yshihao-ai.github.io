@@ -1,0 +1,4 @@
+type = "publication"
+title = "论文"
+description = "这里展示代表性论文与预印本；更完整、持续更新的列表请参考 Google Scholar。"
+source = "publications.bib"

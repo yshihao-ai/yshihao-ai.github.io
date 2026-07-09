@@ -1,0 +1,29 @@
+type = "card"
+title = "项目"
+description = "代表性的开源研究项目、benchmark 与代码发布。"
+
+[[items]]
+title = "HyCoRA"
+subtitle = "AAAI 2026 / arXiv"
+date = "2025-2026"
+image = "/projects/hycora.jpg"
+link = "https://github.com/yshihao-ai/HyCoRA"
+content = """
+HyCoRA 是一个面向多角色 role-playing 的角色自适应学习框架，结合了 Hyper-Half LoRA 结构与 hyper-contrastive learning，用于同时建模角色特异性与共享行为。
+
+[论文](https://arxiv.org/abs/2511.08017) | [代码](https://github.com/yshihao-ai/HyCoRA)
+"""
+tags = ["大语言模型", "角色扮演", "PEFT", "Hypernetwork"]
+
+[[items]]
+title = "SnapSQL-Bench"
+subtitle = "Benchmark + 数据集"
+date = "2025-2026"
+image = "/projects/snapsql-bench.png"
+link = "https://github.com/yshihao-ai/SnapSQLBench"
+content = """
+SnapSQL-Bench 是一个面向视觉 Text-to-SQL 的 benchmark，用于评估模型在真实表格图像退化条件下的鲁棒性，以及它们是否能够利用 VisualCueSQL 范式中的视觉推理线索。
+
+[仓库](https://github.com/yshihao-ai/SnapSQLBench) | [数据集](https://huggingface.co/datasets/yshihao/SnapSQLBench)
+"""
+tags = ["多模态", "Text-to-SQL", "Benchmark", "数据集"]

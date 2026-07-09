@@ -1,0 +1,11 @@
+[[news]]
+date = "2026"
+content = "HyCoRA will appear at AAAI 2026."
+
+[[news]]
+date = "2025-11"
+content = "Released the HyCoRA arXiv preprint and codebase."
+
+[[news]]
+date = "2025"
+content = "Launched SnapSQL-Bench and the accompanying Hugging Face dataset."

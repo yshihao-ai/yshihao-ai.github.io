@@ -1,0 +1,29 @@
+type = "card"
+title = "Projects"
+description = "Selected open-source research artifacts, benchmarks, and code releases."
+
+[[items]]
+title = "HyCoRA"
+subtitle = "AAAI 2026 / arXiv"
+date = "2025-2026"
+image = "/projects/hycora.jpg"
+link = "https://github.com/yshihao-ai/HyCoRA"
+content = """
+HyCoRA is a role-adaptive learning framework for multi-character role-playing. It combines a Hyper-Half LoRA structure with hyper-contrastive learning to capture both role-specific and shared behaviors.
+
+[Paper](https://arxiv.org/abs/2511.08017) | [Code](https://github.com/yshihao-ai/HyCoRA)
+"""
+tags = ["LLM", "Role-Playing", "PEFT", "Hypernetwork"]
+
+[[items]]
+title = "SnapSQL-Bench"
+subtitle = "Benchmark + Dataset"
+date = "2025-2026"
+image = "/projects/snapsql-bench.png"
+link = "https://github.com/yshihao-ai/SnapSQLBench"
+content = """
+SnapSQL-Bench is a benchmark for visual Text-to-SQL. It evaluates robustness under realistic table-image corruption and studies whether models can leverage visual reasoning cues through the VisualCueSQL paradigm.
+
+[Repository](https://github.com/yshihao-ai/SnapSQLBench) | [Dataset](https://huggingface.co/datasets/yshihao/SnapSQLBench)
+"""
+tags = ["Multimodal", "Text-to-SQL", "Benchmark", "Dataset"]
