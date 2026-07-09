@@ -3,10 +3,10 @@ title = "关于"
 
 [profile]
 research_interests = [
-  "大语言模型",
-  "角色扮演智能体",
-  "视觉 Text-to-SQL",
-  "多模态推理"
+  "Agents",
+  "Text2SQL",
+  "Knowledge",
+  "多模态"
 ]
 
 [[sections]]

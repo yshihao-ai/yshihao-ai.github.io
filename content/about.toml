@@ -3,10 +3,10 @@ title = "About"
 
 [profile]
 research_interests = [
-  "Large Language Models",
-  "Role-Playing Agents",
-  "Visual Text-to-SQL",
-  "Multimodal Reasoning"
+  "Agents",
+  "Text2SQL",
+  "Knowledge",
+  "Multimodal"
 ]
 
 [[sections]]

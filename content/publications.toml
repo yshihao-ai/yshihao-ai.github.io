@@ -1,4 +1,4 @@
 type = "publication"
 title = "Publications"
-description = "Selected publications and preprints. For a continuously updated list, please refer to Google Scholar."
+description = "Publications are grouped into first-author papers and participating papers. For a continuously updated list, please refer to Google Scholar."
 source = "publications.bib"

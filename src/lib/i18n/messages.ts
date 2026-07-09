@@ -37,6 +37,8 @@ export interface LocaleMessages {
     filters: string;
     year: string;
     type: string;
+    firstAuthor: string;
+    participating: string;
     noResults: string;
     abstract: string;
     bibtex: string;
@@ -87,6 +89,8 @@ const en: LocaleMessages = {
     filters: 'Filters',
     year: 'Year',
     type: 'Type',
+    firstAuthor: 'First-Author Papers',
+    participating: 'Participating Papers',
     noResults: 'No publications found matching your criteria.',
     abstract: 'Abstract',
     bibtex: 'BibTeX',
@@ -116,7 +120,7 @@ const zh: LocaleMessages = {
   profile: {
     email: '邮箱',
     location: '地址',
-    workAddress: '办公地址',
+    workAddress: '工作地址',
     click: '点击',
     googleMap: '谷歌地图',
     send: '发送',
@@ -127,7 +131,7 @@ const zh: LocaleMessages = {
     thanks: '感谢支持！',
   },
   home: {
-    about: '关于我',
+    about: '关于',
     news: '动态',
     selectedPublications: '精选论文',
     viewAll: '查看全部',
@@ -137,6 +141,8 @@ const zh: LocaleMessages = {
     filters: '筛选',
     year: '年份',
     type: '类型',
+    firstAuthor: '一作论文',
+    participating: '参与论文',
     noResults: '没有找到符合条件的论文。',
     abstract: '摘要',
     bibtex: 'BibTeX',

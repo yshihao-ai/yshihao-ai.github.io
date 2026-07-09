@@ -1,6 +1,8 @@
-I am affiliated with **Southeast University**, where I work on research at the intersection of **large language models**, **multimodal reasoning**, and **structured querying systems**.
+I am currently a graduate student at **Southeast University**.
 
-My recent interests include **role-playing agents**, **parameter-efficient adaptation**, **visual Text-to-SQL**, and reasoning over table images and visual cues.
+I received my bachelor's degree from **Tianjin Polytechnic University**, and I am pursuing my graduate studies at **Southeast University**.
+
+My research interests focus on **Agents**, **Text2SQL**, **Knowledge**, and **Multimodal** methods.
 
 Recent work includes [**HyCoRA**](https://arxiv.org/abs/2511.08017), a role-adaptive learning framework for multi-character role-playing accepted to **AAAI 2026**, and [**SnapSQL-Bench**](https://github.com/yshihao-ai/SnapSQLBench), a benchmark for visual Text-to-SQL together with the **VisualCueSQL** paradigm.
 

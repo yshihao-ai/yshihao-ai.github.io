@@ -16,6 +16,10 @@ export type BibTeXInlineNode =
     children: BibTeXInlineNode[];
   };
 
+export type PublicationGroup =
+  | 'first-author'
+  | 'participating';
+
 export interface Publication {
   id: string;
   title: string;
@@ -53,6 +57,7 @@ export interface Publication {
   summary?: string;
   researchArea: ResearchArea;
   description?: string;
+  publicationGroup?: PublicationGroup;
 }
 
 export type PublicationType =
