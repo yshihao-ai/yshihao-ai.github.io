@@ -6,7 +6,7 @@ last_updated = "July 9, 2026"
 
 [author]
 name = "Shihao Yang"
-title = "Graduate Student / Researcher"
+title = "Master Student / Researcher"
 institution = "Southeast University"
 avatar = "https://avatars.githubusercontent.com/u/241947270?v=4"
 
@@ -42,12 +42,6 @@ title = "About"
 type = "page"
 target = "about"
 href = "/"
-
-[[navigation]]
-title = "Education"
-type = "page"
-target = "education"
-href = "/education"
 
 [[navigation]]
 title = "Publications"

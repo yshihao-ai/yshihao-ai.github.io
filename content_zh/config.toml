@@ -5,7 +5,7 @@ last_updated = "2026年7月9日"
 
 [author]
 name = "Shihao Yang"
-title = "研究生 / 研究者"
+title = "硕士研究生 / 研究者"
 institution = "东南大学"
 
 [social]
@@ -20,12 +20,6 @@ title = "关于"
 type = "page"
 target = "about"
 href = "/"
-
-[[navigation]]
-title = "教育经历"
-type = "page"
-target = "education"
-href = "/education"
 
 [[navigation]]
 title = "论文"

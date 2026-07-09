@@ -4,10 +4,10 @@ description = "本科与研究生教育背景。"
 
 [[items]]
 title = "东南大学"
-subtitle = "研究生，智能科学与技术"
+subtitle = "硕士，智能科学与技术"
 date = "2026-至今"
 
 [[items]]
 title = "天津工业大学"
-subtitle = "软件工程"
+subtitle = "学士，软件工程"
 date = "2022-2026"

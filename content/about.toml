@@ -16,6 +16,11 @@ source = "bio.md"
 title = "About"
 
 [[sections]]
+id = "education"
+type = "card"
+source = "education.toml"
+
+[[sections]]
 id = "featured_publications"
 type = "publications"
 title = "Selected Publications"
