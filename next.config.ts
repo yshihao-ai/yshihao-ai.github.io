@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
-const repositoryName = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "";
-const isUserSiteRepository = repositoryName.endsWith(".github.io");
+const [repositoryOwner = "", repositoryName = ""] = process.env.GITHUB_REPOSITORY?.split("/") ?? [];
+const isUserSiteRepository =
+  Boolean(repositoryOwner && repositoryName) &&
+  repositoryName.toLowerCase() === `${repositoryOwner.toLowerCase()}.github.io`;
 const basePath = repositoryName && !isUserSiteRepository ? `/${repositoryName}` : "";
 
 const nextConfig: NextConfig = {
