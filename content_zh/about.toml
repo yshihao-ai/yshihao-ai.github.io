@@ -3,9 +3,9 @@ title = "关于"
 
 [profile]
 research_interests = [
-  "Agents",
-  "Text2SQL",
-  "Knowledge",
+  "智能体",
+  "SQL生成",
+  "知识图谱",
   "多模态"
 ]
 

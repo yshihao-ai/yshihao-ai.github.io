@@ -1,8 +1,6 @@
 I am currently a graduate student at **Southeast University**.
 
-I received my bachelor's degree from **Tianjin Polytechnic University**, and I am pursuing my graduate studies at **Southeast University**.
-
-My research interests focus on **Agents**, **Text2SQL**, **Knowledge**, and **Multimodal** methods.
+My research interests focus on **Agents**, **Text2SQL**, **Knowledge Graph**, and **Multimodal** methods.
 
 Recent work includes [**HyCoRA**](https://arxiv.org/abs/2511.08017), a role-adaptive learning framework for multi-character role-playing accepted to **AAAI 2026**, and [**SnapSQL-Bench**](https://github.com/yshihao-ai/SnapSQLBench), a benchmark for visual Text-to-SQL together with the **VisualCueSQL** paradigm.
 

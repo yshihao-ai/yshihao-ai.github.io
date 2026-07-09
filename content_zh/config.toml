@@ -22,6 +22,12 @@ target = "about"
 href = "/"
 
 [[navigation]]
+title = "教育经历"
+type = "page"
+target = "education"
+href = "/education"
+
+[[navigation]]
 title = "论文"
 type = "page"
 target = "publications"
