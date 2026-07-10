@@ -95,16 +95,16 @@ export default function PublicationsList({ config, publications, embedded = fals
                     </div>
                 )}
                 <div className="flex-grow">
-                    {pub.venue && (
-                        <div className="mb-3">
-                            <span className="inline-flex items-center rounded-full border border-amber-300 bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-900 shadow-sm dark:border-amber-300/30 dark:bg-amber-400/15 dark:text-amber-200">
+                    <div className="mb-2 flex flex-wrap items-start gap-3">
+                        <h3 className={`${embedded ? "text-lg" : "text-xl"} min-w-0 flex-1 font-semibold text-primary leading-tight`}>
+                            <FormattedBibTeXText nodes={pub.titleNodes} fallback={pub.title} />
+                        </h3>
+                        {pub.venue && (
+                            <span className="inline-flex shrink-0 items-center rounded-full border border-amber-300 bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-900 shadow-sm dark:border-amber-300/30 dark:bg-amber-400/15 dark:text-amber-200">
                                 {pub.venue}
                             </span>
-                        </div>
-                    )}
-                    <h3 className={`${embedded ? "text-lg" : "text-xl"} font-semibold text-primary mb-2 leading-tight`}>
-                        <FormattedBibTeXText nodes={pub.titleNodes} fallback={pub.title} />
-                    </h3>
+                        )}
+                    </div>
                     <p className={`${embedded ? "text-sm" : "text-base"} text-neutral-600 dark:text-neutral-400 mb-2`}>
                         {pub.authors.map((author, idx) => (
                             <span key={idx}>
