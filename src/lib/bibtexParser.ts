@@ -68,6 +68,7 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
       researchArea: detectResearchArea(tags.title, keywords),
       journal: cleanBibTeXString(tags.journal),
       conference: cleanBibTeXString(tags.booktitle),
+      venue: cleanBibTeXString(tags.venue || tags.shortvenue),
       volume: tags.volume,
       issue: tags.number,
       pages: tags.pages,
@@ -79,7 +80,7 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
       selected,
       preview,
       publicationGroup,
-      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code', 'category', 'group', 'publication_group']),
+      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code', 'category', 'group', 'publication_group', 'venue', 'shortvenue']),
     };
 
     Object.keys(publication).forEach(key => {

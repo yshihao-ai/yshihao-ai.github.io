@@ -95,6 +95,13 @@ export default function PublicationsList({ config, publications, embedded = fals
                     </div>
                 )}
                 <div className="flex-grow">
+                    {pub.venue && (
+                        <div className="mb-3">
+                            <span className="inline-flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent border border-accent/20">
+                                {pub.venue}
+                            </span>
+                        </div>
+                    )}
                     <h3 className={`${embedded ? "text-lg" : "text-xl"} font-semibold text-primary mb-2 leading-tight`}>
                         <FormattedBibTeXText nodes={pub.titleNodes} fallback={pub.title} />
                     </h3>
