@@ -100,7 +100,7 @@ export default function PublicationsList({ config, publications, embedded = fals
                             <FormattedBibTeXText nodes={pub.titleNodes} fallback={pub.title} />
                         </h3>
                         {pub.venue && (
-                            <span className="inline-flex shrink-0 items-center rounded-full border border-amber-300 bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-900 shadow-sm dark:border-amber-300/30 dark:bg-amber-400/15 dark:text-amber-200">
+                            <span className="inline-flex shrink-0 items-center rounded-full border border-amber-300 bg-amber-100 px-3 py-1 text-sm font-semibold text-amber-900 shadow-sm dark:border-amber-300/30 dark:bg-amber-400/15 dark:text-amber-200">
                                 {pub.venue}
                             </span>
                         )}
