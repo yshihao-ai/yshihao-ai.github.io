@@ -43,7 +43,7 @@ export default function SelectedPublications({ publications, title, enableOnePag
                     >
                         {pub.venue && (
                             <div className="mb-2">
-                                <span className="inline-flex items-center rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent border border-accent/20">
+                                <span className="inline-flex items-center rounded-full border border-amber-300 bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-900 shadow-sm dark:border-amber-300/30 dark:bg-amber-400/15 dark:text-amber-200">
                                     {pub.venue}
                                 </span>
                             </div>
