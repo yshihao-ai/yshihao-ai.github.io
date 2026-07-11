@@ -16,6 +16,17 @@ export default function SelectedPublications({ publications, title, enableOnePag
     const messages = useMessages();
     const resolvedTitle = title || messages.home.selectedPublications;
 
+    const formatPublicationSource = (pub: Publication) => {
+        const source = pub.journal || pub.conference || '';
+        const yearLabel = String(pub.year);
+
+        if (!source) {
+            return yearLabel;
+        }
+
+        return source.includes(yearLabel) ? source : `${source} ${yearLabel}`;
+    };
+
     return (
         <motion.section
             initial={{ opacity: 0, y: 20 }}
@@ -41,16 +52,9 @@ export default function SelectedPublications({ publications, title, enableOnePag
                         transition={{ duration: 0.4, delay: 0.1 * index }}
                         className="bg-neutral-50 dark:bg-neutral-800 p-4 rounded-lg shadow-sm border border-neutral-200 dark:border-[rgba(148,163,184,0.24)] hover:shadow-lg transition-all duration-200 hover:scale-[1.02]"
                     >
-                        <div className="mb-2 flex flex-wrap items-start gap-3">
-                            <h3 className="min-w-0 flex-1 font-semibold text-primary leading-tight">
-                                <FormattedBibTeXText nodes={pub.titleNodes} fallback={pub.title} />
-                            </h3>
-                            {pub.venue && (
-                                <span className="inline-flex shrink-0 items-center rounded-full border border-amber-300 bg-amber-100 px-3 py-1 text-sm font-semibold text-amber-900 shadow-sm dark:border-amber-300/30 dark:bg-amber-400/15 dark:text-amber-200">
-                                    {pub.venue}
-                                </span>
-                            )}
-                        </div>
+                        <h3 className="mb-2 font-semibold text-primary leading-tight">
+                            <FormattedBibTeXText nodes={pub.titleNodes} fallback={pub.title} />
+                        </h3>
                         <p className="text-sm text-neutral-600 dark:text-neutral-500 mb-1">
                             {pub.authors.map((author, idx) => (
                                 <span key={idx}>
@@ -64,9 +68,16 @@ export default function SelectedPublications({ publications, title, enableOnePag
                                 </span>
                             ))}
                         </p>
-                        <p className="text-sm text-neutral-600 dark:text-neutral-500 mb-2">
-                            {pub.journal || pub.conference}
-                        </p>
+                        <div className="mb-2 flex flex-wrap items-center gap-2">
+                            {pub.venue && (
+                                <span className="inline-flex items-center rounded-full border border-amber-300 bg-amber-100 px-3 py-1 text-sm font-semibold text-amber-900 shadow-sm dark:border-amber-300/30 dark:bg-amber-400/15 dark:text-amber-200">
+                                    {pub.venue}
+                                </span>
+                            )}
+                            <p className="text-sm font-medium text-neutral-700 dark:text-neutral-400">
+                                {formatPublicationSource(pub)}
+                            </p>
+                        </div>
                         {pub.description && (
                             <p className="text-sm text-neutral-500 dark:text-neutral-500 line-clamp-2">
                                 {pub.description}
